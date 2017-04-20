@@ -7,6 +7,9 @@ import {
 
 import LandingPage from '../features/landing-page/LandingPage';
 import Navigation from '../features/navigation/Navigation';
+import Footer from '../features/footer/Footer';
+import ScrollTop from '../features/footer/scroll-top';
+import OffCanvas from '../features/off-canvas/Off-Canvas';
 
 class App extends Component {
 
@@ -17,6 +20,10 @@ class App extends Component {
         <Router>
           <Route exact path="/" component={LandingPage} />
         </Router>
+        <Footer />
+        <ScrollTop />
+
+        <OffCanvas />
       </div>
     );
   }
