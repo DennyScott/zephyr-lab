@@ -2087,10 +2087,6 @@ body.off-canvas-sidebar-open .layout {
     height: 100%;
 }
 
-.header .brand-light {
-    display: none;
-}
-
 .inner-header {
     vertical-align: middle;
 }
@@ -2368,16 +2364,11 @@ body.off-canvas-sidebar-open .layout {
     display: inline-block;
 }
 
-.header .brand-light,
-.header.header-light.header-small .brand-light {
-    display: none;
-}
-
 .header .inner-nav > ul > li > a,
 .header .extra-nav > ul > li > a,
 .header.header-light.header-small .inner-nav > ul > li > a,
 .header.header-light.header-small .extra-nav > ul > li > a {
-    color: #303133;
+    color: white;
 }
 
 .header .inner-nav > ul > li > a:hover,
