@@ -1,16 +1,43 @@
 import React, {Component} from 'react';
-import logo from '../../assets/images/logo-light.png';
+import logoLight from '../../assets/images/logo-light.png';
+import logo from '../../assets/images/logo.png';
 
 export default class Navigation extends Component {
+    constructor(props) {
+      super(props);
+      this.state = { isScrolled: false }
+    }
+
+    animateBar = () => {
+      let { isScrolled } = this.state;
+        if(window.scrollY > 0){
+          if(isScrolled) return;
+
+          this.setState({isScrolled: true});
+        } else {
+          if(!isScrolled) return;
+
+          this.setState({isScrolled: false})
+        }
+    }
+
+    componentDidMount() {
+      window.addEventListener('scroll', this.animateBar)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.animateBar);
+    }
 
     render() {
         return (
-            <header className="header header-center">
+            <header className={"header header-center header-light " + (this.state.isScrolled ? 'header-small header-shadow' : '')}>
                 <div className="container-fluid">
                     {/* Logos */}
                     <div className="inner-header">
                         <a className="inner-brand" href="index.html">
-                          <img className="brand-light" src={logo} width="77px" alt=""/>
+                            <img className="brand-dark" src={logo} width="77px" alt="" />
+                            <img className="brand-light" src={logoLight} width="77px" alt=""/>
                         </a>
                     </div>
                     {/* Navigation */}
