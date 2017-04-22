@@ -1,0 +1,12 @@
+.scroll-top {
+  padding: 0;
+  border: none;
+}
+
+button:focus.scroll-top {
+  outline: none;
+}
+
+.scroll-top.show {
+  bottom: 100px;
+}

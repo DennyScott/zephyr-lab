@@ -22,7 +22,7 @@ export default class Navigation extends Component {
     }
 
     componentDidMount() {
-      window.addEventListener('scroll', this.animateBar)
+      window.addEventListener('scroll', this.animateBar);
     }
 
     componentWillUnmount() {
