@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {custom, onLoad, wow} from '../../assets/js/custom';
 
-import logo from '../../assets/images/logo-light.png';
 import parallaxImage from '../../assets/images/module-4.jpg';
 
 import './landing-page.css';
@@ -15,29 +13,29 @@ import Portfolio from './portfolio/Portfolio';
 import ExtendedServices from './extended-services/Extended-Services';
 import Team from './team/Team';
 import Testimonials from './testimonials/Testimonials';
-import Clients from './clients/Clients';
 import AltServices from './alt-services/Alt-Services';
 import News from './news/News';
 import Counters from './counters/Counters';
 import FooterImage from './footer-image/Footer-Image';
 
-let wowData = wow();
-
 class LandingPage extends Component {
-  componentDidMount() {
-    onLoad();
-    custom();
-    wowData.init();
-    wowData.sync();
+  constructor(props){
+    super(props);
+    this.state = { opacity: 0 };
+    this.fadeIn = { opacity: this.state.opacity };
   }
 
-  componentDidUpdate() {
-    wowData.sync();
+  componentDidMount() {
+    setTimeout(() => {
+      this.fadeIn = { opacity: 1 };
+      this.setState({ opacity: 1});
+    }, 1);
   }
 
   render() {
+
     return (
-  		<div className="layout">
+  		<div className="layout" style={this.fadeIn}>
 
   			<div className="wrapper">
 
