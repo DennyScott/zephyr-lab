@@ -1,11 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Slider from 'react-slick';
 
-const testimonials = props => (
-  <section className="module parallax bg-dark bg-dark-30" data-background="assets/images/module-4.jpg">
+const testimonials = props => {
+let parallaxStyle = {
+  backgroundImage: "url(" + props.image + ")",
+  height: "100%",
+  backgroundAttachment: "fixed",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+}
+
+let settings = {
+  dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000
+}
+
+return (
+  <section className="module parallax bg-dark bg-dark-30" style={parallaxStyle}>
     <div className="container">
       <div className="row">
         <div className="col-md-6 offset-md-3">
-          <div className="tms-slides owl-carousel">
+          <Slider {...settings} className="tms-slides">
             <div className="tms-item">
               <div className="tms-icons">
                 <h2><span className="icon icon-basic-message-multiple"></span></h2>
@@ -39,11 +61,16 @@ const testimonials = props => (
               </div>
               <div className="tms-author"><span>Marilyn Monroe</span></div>
             </div>
-          </div>
+          </Slider>
         </div>
       </div>
     </div>
   </section>
 );
+}
+
+testimonials.propTypes = {
+  image: PropTypes.string.isRequired,
+}
 
 export default testimonials;

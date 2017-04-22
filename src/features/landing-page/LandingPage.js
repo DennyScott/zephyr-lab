@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import {custom, onLoad, wow} from '../../assets/js/custom';
 
 import logo from '../../assets/images/logo-light.png';
+import parallaxImage from '../../assets/images/module-4.jpg';
 
 import './landing-page.css';
 
@@ -48,8 +49,7 @@ class LandingPage extends Component {
           <Portfolio />
           <ExtendedServices />
           <Team />
-          <Testimonials />
-          <Clients />
+          <Testimonials image={parallaxImage}/>
           <AltServices />
           <News />
           <Counters />
