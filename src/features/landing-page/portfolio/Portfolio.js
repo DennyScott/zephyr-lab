@@ -10,8 +10,7 @@ import imageSix from '../../../assets/images/portfolio/img-6.jpg';
 import './portfolio.css';
 
 const portfolio = props => (
-  <div>
-  <section className="module p-b-0">
+  <section id="portfolio" className="module module-divider-bottom">
     <div className="container">
       <div className="row">
         <div className="col-md-8 offset-md-2">
@@ -22,10 +21,8 @@ const portfolio = props => (
         </div>
       </div>
     </div>
-  </section>
 
-  <section className="module module-divider-bottom p-0">
-    <div className="container-fluid">
+    <div className="container">
       <div className="row row-portfolio-filter">
         <div className="col-md-12">
           <ul className="filters h5" id="filters">
@@ -101,7 +98,6 @@ const portfolio = props => (
       </div>
     </div>
   </section>
-  </div>
 );
 
 export default portfolio;
