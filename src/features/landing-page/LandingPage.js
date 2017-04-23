@@ -20,7 +20,6 @@ import FooterImage from './footer-image/Footer-Image';
 
 class LandingPage extends Component {
 
-
   render() {
 
     return (

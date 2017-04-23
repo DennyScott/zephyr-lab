@@ -14,7 +14,7 @@ import Blog from '../features/blog/blog';
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = { opacity: 0 };
+    this.state = { opacity: 0, displaySideMenu: false };
     this.fadeIn = { opacity: this.state.opacity };
   }
 
@@ -25,13 +25,23 @@ class App extends Component {
     }, 1);
   }
 
+  toggleSideMenu = () => {
+    this.setState({ displaySideMenu: !this.state.displaySideMenu });
+  }
+
+  onLayoutClick = () => {
+    if(this.state.displaySideMenu) {
+      this.toggleSideMenu();
+    }
+  }
+
   render() {
     return (
       <div className="App">
-        <div className="layout" style={this.fadeIn}>
+        <div className={"layout " + (this.state.displaySideMenu ? 'off-canvas-sidebar-open' : '')} style={this.fadeIn} onClick={() => { this.onLayoutClick() }} >
         <Router>
           <div>
-            <Navigation />
+            <Navigation toggleSideMenu={this.toggleSideMenu} />
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/blog" component={Blog} />
           </div>
@@ -39,7 +49,7 @@ class App extends Component {
         <Footer />
         <ScrollTop />
 
-        <OffCanvas />
+        <OffCanvas toggleSideMenu={this.toggleSideMenu} />
         </div>
       </div>
     );

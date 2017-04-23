@@ -6,7 +6,7 @@ import logo from '../../assets/images/logo-light.png';
 const offCanvas = props => (
   <div className="off-canvas-sidebar">
     <div className="off-canvas-sidebar-wrapper">
-      <div className="off-canvas-header"><a className="close-offcanvas" href="#"><span className="arrows arrows-arrows-remove"></span></a></div>
+      <div className="off-canvas-header"><a className="close-offcanvas" onClick={ () => {props.toggleSideMenu()} } href="#"><span className="arrows arrows-arrows-remove"></span></a></div>
       <div className="off-canvas-content">
         {/* Text widget */}
         <aside className="widget widget_text">

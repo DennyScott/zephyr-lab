@@ -1,9 +1,15 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import logoLight from '../../assets/images/logo-light.png';
 import logo from '../../assets/images/logo.png';
 import { withRouter } from 'react-router';
 
 class Navigation extends Component {
+
+  static propTypes = {
+    toggleSideMenu: PropTypes.func.isRequired,
+  }
+
     constructor(props) {
       super(props);
       this.state = { isScrolled: false }
@@ -377,7 +383,7 @@ class Navigation extends Component {
                     <div className="extra-nav">
                         <ul>
                             <li>
-                                <a className="open-offcanvas" href="#">
+                                <a className="open-offcanvas" href="#" onClick={() => {this.props.toggleSideMenu()}}>
                                     <span>Menu</span>
                                     <span className="fa fa-bars"></span>
                                 </a>

@@ -1576,7 +1576,7 @@ select.form-control-sm:not([size]):not([multiple]) {
 [Offcanvas]
 */
 
-body:after {
+.off-canvas-sidebar-open:after {
     background: rgba(0, 0, 0, .7);
     position: fixed;
     height: 1px;
@@ -1595,7 +1595,7 @@ body:after {
     cursor: url("../images/close.png"), pointer;
 }
 
-body.off-canvas-sidebar-open:after {
+.off-canvas-sidebar-open:after {
     visibility: visible;
     height: 100%;
     width: 100%;
@@ -1610,7 +1610,7 @@ body.off-canvas-sidebar-open:after {
     left: 0;
 }
 
-body.off-canvas-sidebar-open .layout {
+.layout.off-canvas-sidebar-open {
     left: -270px;
 }
 
