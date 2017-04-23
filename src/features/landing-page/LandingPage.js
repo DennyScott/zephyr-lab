@@ -19,23 +19,11 @@ import Counters from './counters/Counters';
 import FooterImage from './footer-image/Footer-Image';
 
 class LandingPage extends Component {
-  constructor(props){
-    super(props);
-    this.state = { opacity: 0 };
-    this.fadeIn = { opacity: this.state.opacity };
-  }
 
-  componentDidMount() {
-    setTimeout(() => {
-      this.fadeIn = { opacity: 1 };
-      this.setState({ opacity: 1});
-    }, 1);
-  }
 
   render() {
 
     return (
-  		<div className="layout" style={this.fadeIn}>
 
   			<div className="wrapper">
 
@@ -53,8 +41,6 @@ class LandingPage extends Component {
           <Counters />
           <FooterImage />
   			</div>
-
-  		</div>
     )
   }
 }

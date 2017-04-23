@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import logoLight from '../../assets/images/logo-light.png';
 import logo from '../../assets/images/logo.png';
+import { withRouter } from 'react-router';
 
-export default class Navigation extends Component {
+class Navigation extends Component {
     constructor(props) {
       super(props);
       this.state = { isScrolled: false }
@@ -30,8 +31,9 @@ export default class Navigation extends Component {
     }
 
     render() {
+      let landingPage = this.props.location.pathname === '/' ? 'landing-page' : '';
         return (
-            <header className={"header header-center header-light " + (this.state.isScrolled ? 'header-small header-shadow' : '')}>
+            <header className={"header header-center header-light " + (this.state.isScrolled ? 'header-small header-shadow' : landingPage)}>
                 <div className="container-fluid">
                     {/* Logos */}
                     <div className="inner-header">
@@ -395,3 +397,6 @@ export default class Navigation extends Component {
         );
     }
 }
+
+const NavigationWithRoute = withRouter(Navigation);
+export default NavigationWithRoute;

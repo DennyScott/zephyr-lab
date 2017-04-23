@@ -54,7 +54,7 @@ const footer = props => (
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div className="text-center"><span className="copyright">© 2017 Core, All Rights Reserved. Design with love by <a href="http://2the.me/">2the.me</a></span></div>
+            <div className="text-center"><span className="copyright">© 2017 Zephyr Labs, All Rights Reserved.</span></div>
           </div>
         </div>
       </div>

@@ -2023,7 +2023,7 @@ body.off-canvas-sidebar-open .layout {
 }
 
 .header {
-    background: transparent;
+    background: white;
     position: fixed;
     z-index: 1040;
     height: 81px;
@@ -2368,6 +2368,11 @@ body.off-canvas-sidebar-open .layout {
     display: inline-block;
 }
 
+.header.landing-page {
+  background: transparent;
+  color: white;
+}
+
 .header .brand-light,
 .header.header-light.header-small .brand-light {
     display: none;
@@ -2376,6 +2381,7 @@ body.off-canvas-sidebar-open .layout {
 .header .inner-nav > ul > li > a,
 .header .extra-nav > ul > li > a,
 .header.header-light.header-small .inner-nav > ul > li > a,
+.header.header-light .inner-nav > ul > li > a,
 .header.header-light.header-small .extra-nav > ul > li > a {
     color: #303133;
 }
@@ -2399,15 +2405,23 @@ body.off-canvas-sidebar-open .layout {
 }
 
 .header.header-light .brand-dark {
-    display: none;
-}
-
-.header.header-light .brand-light {
     display: inline-block;
 }
 
-.header.header-light .inner-nav > ul > li > a,
-.header.header-light .extra-nav > ul > li > a {
+.header.header-light .brand-light {
+    display: none;
+}
+
+.header.header-light.landing-page .brand-light {
+  display: inline-block;
+}
+
+.header.header-light.landing-page .brand-dark {
+  display: none;
+}
+
+.header.header-light.landing-page .inner-nav > ul > li > a,
+.header.header-light.landing-page .extra-nav > ul > li > a {
     color: #fff;
 }
 
@@ -2619,6 +2633,11 @@ body.off-canvas-sidebar-open .layout {
     .header.header-small .brand-dark,
     .header.header-light.header-small .brand-dark {
         display: inline-block;
+    }
+
+    .header.landing-page {
+      background: transparent;
+      color: white;
     }
 
     .header .brand-light,
