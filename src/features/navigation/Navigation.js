@@ -54,7 +54,7 @@ class Navigation extends Component {
             <header className={"header header-center header-light " + (this.state.isScrolled ? 'header-small header-shadow' : landingPage)}>
                 <div className="container-fluid">
                     <div className="inner-header">
-                        <Link className="inner-brand" to="/">
+                        <Link className="inner-brand" to="/" onClick={ () => { this.scrollToTop() }}>
                             <img className="brand-dark" src={logo} width="77px" alt="" />
                             <img className="brand-light" src={logoLight} width="77px" alt=""/>
                         </Link>
