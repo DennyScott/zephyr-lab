@@ -1,8 +1,10 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import iphone from '../../../assets/images/iphone.png';
 
 const altServices = props => (
   <section className="module module-divider-bottom">
+    <Element name="services" />
     <div className="container">
       <div className="row">
         <div className="col-md-8 offset-md-2">

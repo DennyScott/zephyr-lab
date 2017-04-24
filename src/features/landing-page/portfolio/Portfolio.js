@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 
 import imageOne from '../../../assets/images/portfolio/img-1.jpg';
 import imageSeven from '../../../assets/images/portfolio/img-7.jpg';
@@ -10,7 +11,8 @@ import imageSix from '../../../assets/images/portfolio/img-6.jpg';
 import './portfolio.css';
 
 const portfolio = props => (
-  <section id="portfolio" className="module module-divider-bottom">
+  <section className="module module-divider-bottom">
+    <Element name="portfolio" />
     <div className="container">
       <div className="row">
         <div className="col-md-8 offset-md-2">

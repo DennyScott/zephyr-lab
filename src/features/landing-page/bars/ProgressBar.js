@@ -12,12 +12,21 @@ export default class ProgressBar extends Component {
   constructor(props) {
     super(props);
     this.state = {width: 0};
+    this.isMount = false;
   }
 
   onVisibleChange = (isVisible) => {
     if(isVisible) {
       setTimeout(() => {this.setState({width: this.props.width})}, 100);
     }
+  }
+
+  componentDidMount() {
+    this.isMount = true;
+  }
+
+  componentWillUnmount() {
+    this.isMount = false;
   }
 
   render() {

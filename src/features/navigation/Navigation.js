@@ -4,6 +4,7 @@ import logoLight from '../../assets/images/logo-light.png';
 import logo from '../../assets/images/logo.png';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
+import { scroller, animateScroll } from 'react-scroll';
 
 class Navigation extends Component {
 
@@ -27,6 +28,16 @@ class Navigation extends Component {
 
           this.setState({isScrolled: false})
         }
+    }
+
+    scrollTo = (name) => {
+      setTimeout(() => {
+        scroller.scrollTo(name, {duration: 700, offset: -100, smooth: true});
+      }, 100);
+    }
+
+    scrollToTop = () => {
+      window.scrollTo(0,0);
     }
 
     componentDidMount() {
@@ -53,19 +64,19 @@ class Navigation extends Component {
                             <div className="inner-nav">
                                 <ul>
                                     <li className="menu-item-has-children menu-item-has-mega-menu">
-                                        <Link to="/">Home</Link>
+                                        <Link to="/" onClick={ () => { this.scrollToTop()}}>Home</Link>
                                     </li>
                                     <li className="menu-item-has-children menu-item-has-mega-menu">
-                                        <Link to="/">Case Studies</Link>
+                                        <Link to="/" onClick={() => { this.scrollTo('portfolio') } }>Case Studies</Link>
                                     </li>
                                     <li className="menu-item-has-children">
-                                        <Link to="/">Our Team</Link>
+                                        <Link to="/" onClick={ () => { this.scrollTo('team') }}>Our Team</Link>
                                     </li>
                                     <li className="menu-item-has-children">
-                                        <Link to="/">Services</Link>
+                                        <Link to="/" onClick={ () => { this.scrollTo('services') }}>Services</Link>
                                     </li>
                                     <li className="menu-item-has-children">
-                                        <Link to="/blog">Blog</Link>
+                                        <Link to="/blog" onClick={ () => { this.scrollToTop() }}>Blog</Link>
                                     </li>
                                 </ul>
                             </div>

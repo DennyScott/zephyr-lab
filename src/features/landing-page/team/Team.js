@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 
 import teamOne from '../../../assets/images/team/1.jpg';
 import teamTwo from '../../../assets/images/team/2.jpg';
@@ -6,6 +7,7 @@ import teamThree from '../../../assets/images/team/3.jpg';
 
 const team = props => (
   <section className="module">
+    <Element name="team" />
     <div className="container">
       <div className="row">
         <div className="col-md-8 offset-md-2">

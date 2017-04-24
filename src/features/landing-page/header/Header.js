@@ -1,9 +1,11 @@
 import React from 'react';
 import video from '../../../assets/video/video.mp4';
 import videoPoster from '../../../assets/video/video.jpg';
+import { Element } from 'react-scroll';
 
 const Header = (props) => (
   <section className="module-header full-height parallax bg-dark bg-dark-90">
+  <Element name="home" />
   <div className="container">
     <div className="row">
       <div className="col-md-12">
