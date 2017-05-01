@@ -4,7 +4,7 @@ import logoLight from '../../assets/images/logo-light.png';
 import logo from '../../assets/images/logo.png';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
-import { scroller, animateScroll } from 'react-scroll';
+import { scroller } from 'react-scroll';
 
 class Navigation extends Component {
 
