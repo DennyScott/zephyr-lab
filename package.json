@@ -13,6 +13,8 @@
     "react-slick": "^0.14.11",
     "react-visibility-sensor": "^3.9.0",
     "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
+    "redux-thunk": "^2.2.0",
     "slick-carousel": "^1.6.0"
   },
   "devDependencies": {
