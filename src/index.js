@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import { fetchBlog } from './actions/blog.js';
 import App from './app/App';
 
 import './index.css';
@@ -12,6 +13,10 @@ import './assets/css/template.css';
 
 import store from './app/store';
 
+store.dispatch(fetchBlog('posts')).then(() =>
+  console.log(store.getState()),
+  err => console.log(err)
+)
 
 ReactDOM.render(
   <Provider store={store}>
