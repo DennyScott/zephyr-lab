@@ -2,10 +2,14 @@ import { createStore, compose, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import rootReducer from '../reducers/index';
+import blog from '../data/blog';
+
 
 const loggerMiddleware = createLogger();
 
-const defaultState = {};
+const defaultState = {
+  blog
+};
 
 const enhancers = compose(
   applyMiddleware(

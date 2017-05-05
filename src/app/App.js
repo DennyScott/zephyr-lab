@@ -21,24 +21,20 @@ class App extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.fadeIn = { opacity: 1 };
-      this.setState({ opacity: 1});
+      this.setState(this.fadeIn);
     }, 1);
   }
 
-  toggleSideMenu = () => {
+  toggleSideMenu = () =>
     this.setState({ displaySideMenu: !this.state.displaySideMenu });
-  }
 
-  onLayoutClick = () => {
-    if(this.state.displaySideMenu) {
-      this.toggleSideMenu();
-    }
-  }
+  onLayoutClick = () =>
+    this.state.displaySideMenu && this.toggleSideMenu();
 
   render() {
     return (
       <div className="App">
-        <div className={"layout " + (this.state.displaySideMenu ? 'off-canvas-sidebar-open' : '')} style={this.fadeIn} onClick={() => { this.onLayoutClick() }} >
+        <div className={"layout " + (this.state.displaySideMenu ? 'off-canvas-sidebar-open' : '')} style={this.fadeIn} onClick={() => this.onLayoutClick() } >
         <Router>
           <div>
             <Navigation toggleSideMenu={this.toggleSideMenu} />
