@@ -5,7 +5,8 @@ const blog = (state = [], action) => {
     case RECEIVE_BLOG:
       return {
         ...state,
-        test: action.data
+        posts: action.data.posts,
+        meta: action.data.meta
       }
     default:
       return state;
