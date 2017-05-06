@@ -38,7 +38,7 @@ class Blog extends Component {
                 }
 							</div>
 
-              <Sidebar />
+              <Sidebar sidebar={blog.sidebar}/>
 						</div>
 					</div>
 				</section>

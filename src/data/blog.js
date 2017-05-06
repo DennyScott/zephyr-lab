@@ -96,7 +96,26 @@ const blog = {
       author: 1,
       url: "/welcome-to-ghost/"
     }
-  ]
+  ],
+  sidebar: {
+    popularPosts : [
+      {
+        created_at: "2014-11-17T19:02:27.147Z",
+        text: "Experience the sound of a modern and clean 360° Bluetooth Speaker.",
+        image: "#"
+      },
+      {
+        created_at: "2014-11-17T19:02:27.147Z",
+        text: "Experience the sound of a modern and clean 360° Bluetooth Speaker.",
+        image: '#'
+      },
+      {
+        created_at: "2014-11-17T19:02:27.147Z",
+        text: "Experience the sound of a modern and clean 360° Bluetooth Speaker.",
+        image: '#'
+      }
+    ]
+  }
 };
 
 export default blog;

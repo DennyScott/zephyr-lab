@@ -1,8 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import widgetImageOne from '../../../assets/images/widgets/1.jpg';
-import widgetImageTwo from '../../../assets/images/widgets/2.jpg';
-import widgetImageThree from '../../../assets/images/widgets/3.jpg';
+import PopularPost from './PopularPost';
 
 const sidebar = props => {
   return (
@@ -32,18 +31,9 @@ const sidebar = props => {
             <h5>Popular Posts</h5>
           </div>
           <ul>
-            <li className="clearfix">
-              <div className="wi"><a href="#"><img src={widgetImageOne} alt="" /></a></div>
-              <div className="wb"><a href="#">Experience the sound of a modern and clean 360° Bluetooth Speaker.</a><span className="post-date">May 8, 2016</span></div>
-            </li>
-            <li className="clearfix">
-              <div className="wi"><a href="#"><img src={widgetImageTwo} alt="" /></a></div>
-              <div className="wb"><a href="#">Experience the sound of a modern and clean 360° Bluetooth Speaker.</a><span className="post-date">May 8, 2016</span></div>
-            </li>
-            <li className="clearfix">
-              <div className="wi"><a href="#"><img src={widgetImageThree} alt="" /></a></div>
-              <div className="wb"><a href="#">Experience the sound of a modern and clean 360° Bluetooth Speaker.</a><span className="post-date">May 8, 2016</span></div>
-            </li>
+            {
+              props.sidebar.popularPosts.map((post, index) => <PopularPost key={index} post={post} />)
+            }
           </ul>
         </aside>
 
@@ -63,6 +53,16 @@ const sidebar = props => {
       </div>
     </div>
   );
+}
+
+sidebar.propTypes = {
+  sidebar: PropTypes.shape({
+    popularPosts: PropTypes.arrayOf(PropTypes.shape({
+      created_at: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+    })).isRequired
+  })
 }
 
 export default sidebar;
