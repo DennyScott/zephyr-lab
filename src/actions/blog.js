@@ -1,8 +1,8 @@
 import fetch from 'isomorphic-fetch';
 
 const default_params = {
-  clientId: "id",
-  clientSecret: "secret"
+  clientId: "ghost-frontend",
+  clientSecret: "915c8752231c"
 }
 
 export const REQUEST_BLOG = 'REQUEST_BLOG';
