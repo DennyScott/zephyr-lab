@@ -18,7 +18,7 @@ function receiveBlog(blog, json) {
   return {
     type: RECEIVE_BLOG,
     blog,
-    data: json.data
+    data: json
   }
 }
 
