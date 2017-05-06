@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import widgetImageOne from '../../../assets/images/blog/1.jpg';
 
 const blogSnippet = props => {
 
   return (
     <article className="post">
-      <div className="post-preview"><a href="#"><img src={props.blog.image} alt="" /></a></div>
+      <div className="post-preview"><a href="#"><img src={widgetImageOne} alt="" /></a></div>
       <div className="post-wrapper">
         <div className="post-header">
           <h2 className="post-title"><a href="blog-single.html">{props.blog.title}</a></h2>
