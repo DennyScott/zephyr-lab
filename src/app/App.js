@@ -19,6 +19,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    console.log("the deploy worked");
     setTimeout(() => {
       this.fadeIn = { opacity: 1 };
       this.setState(this.fadeIn);
