@@ -15,7 +15,7 @@ const blogSnippet = props => {
           </ul>
         </div>
         <div className="post-content">
-          <p>{props.blog.markdown}</p>
+          <p>{props.blog.html}</p>
         </div>
         <div className="post-more"><a href="#">Read more →</a></div>
       </div>
