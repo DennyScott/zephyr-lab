@@ -20,6 +20,10 @@ import FooterImage from './footer-image/Footer-Image';
 
 class LandingPage extends Component {
 
+  componentDidMount() {
+    document.title = "Zephyr Labs";
+  }
+
   render() {
 
     return (

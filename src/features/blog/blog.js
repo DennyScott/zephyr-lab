@@ -8,6 +8,10 @@ import './blog.css';
 
 class Blog extends Component {
 
+  componentDidMount() {
+    document.title = "Blog";
+  }
+
   render() {
     const { blog } = this.props;
     return (
