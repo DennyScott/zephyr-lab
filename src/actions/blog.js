@@ -5,6 +5,9 @@ const default_params = {
   clientSecret: "915c8752231c"
 }
 
+const blogUrl = "https://zephyrlabs.ghost.io/ghost/api/v0.1/";
+const clientUrl = `client_id=${default_params.clientId}&client_secret=${default_params.clientSecret}`;
+
 export const REQUEST_BLOG = 'REQUEST_BLOG';
 function requestBlog(blog) {
   return {
@@ -22,13 +25,41 @@ function receiveBlog(blog, json) {
   }
 }
 
+export const REQUEST_POST= 'REQUEST_POST';
+function requestPost(post) {
+  return {
+    type: REQUEST_POST,
+    post
+  }
+}
+
+export const RECEIVE_POST = 'RECEIVE_POST';
+function receivePost(post, json) {
+  return {
+    type: RECEIVE_POST,
+    post,
+    data: json
+  }
+}
+
 export function fetchBlog(blog) {
 
   return function (dispatch) {
     dispatch(requestBlog(blog));
 
-    return fetch(`https://zephyrlabs.ghost.io/ghost/api/v0.1/${blog}?client_id=${default_params.clientId}&client_secret=${default_params.clientSecret}`)
+    return fetch(`${blogUrl}${blog}?${clientUrl}`)
       .then(response => response.json())
       .then(json => dispatch(receiveBlog(blog, json)))
+  }
+}
+
+export function fetchPost(postId) {
+  return function(dispatch) {
+    dispatch(requestPost(postId));
+
+    return fetch(`${blogUrl}posts/${postId}?${clientUrl}`)
+      .then(response => response.json())
+      .then(json => dispatch(receivePost(postId, json)));
+
   }
 }

@@ -10,6 +10,7 @@ import Footer from '../features/footer/Footer';
 import ScrollTop from '../features/footer/scroll-top';
 import OffCanvas from '../features/off-canvas/Off-Canvas';
 import Blog from '../features/blog/blog';
+import BlogPost from '../features/blog-post/Blog-post';
 
 class App extends Component {
   constructor(props){
@@ -40,6 +41,7 @@ class App extends Component {
             <Navigation toggleSideMenu={this.toggleSideMenu} />
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/blog" component={Blog} />
+            <Route path="/blog/:id" component={BlogPost} />
           </div>
         </Router>
         <Footer />
