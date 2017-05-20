@@ -27,7 +27,6 @@ class App extends Component {
     }
 
     componentDidMount() {
-      console.log(location);
       if(!location.href.includes('localhost:3000')) {
         ReactGA.set({page: location.pathname});
         ReactGA.pageview(location.pathname);

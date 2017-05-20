@@ -1,7 +1,12 @@
 import React from 'react';
 import video from '../../../assets/video/video.mp4';
 import videoPoster from '../../../assets/video/video.jpg';
-import { Element } from 'react-scroll';
+import { Link } from 'react-router-dom';
+import { Element, scroller } from 'react-scroll';
+
+const scrollDown = () => {
+  scroller.scrollTo("skills", {duration: 600, offset: -100, smooth: true});
+}
 
 const Header = (props) => (
   <section className="module-header full-height parallax bg-dark bg-dark-90">
@@ -10,9 +15,9 @@ const Header = (props) => (
     <div className="row">
       <div className="col-md-12">
         <h1 className="h6 m-b-20">THINK. DEFINE. DESIGN.</h1>
-        <h1 className="h1 m-b-20">We Are Business</h1>
-        <p className="m-b-40">Start with co-working way in our studio.</p>
-        <p><a className="btn btn-lg btn-circle btn-brand" href="#">Let’s get started!</a></p>
+        <h1 className="h1 m-b-20">Zephyr Labs</h1>
+        <p className="m-b-40">Realize your products today.</p>
+        <p><Link to="/" className="btn btn-lg btn-circle btn-brand" onClick={scrollDown }>Let’s get started!</Link></p>
       </div>
     </div>
   </div>

@@ -1,7 +1,9 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 
 const services = (props) => (
   <section className="module">
+    <Element name="skills" />
     <div className="container">
       <div className="row">
         <div className="col-md-3">

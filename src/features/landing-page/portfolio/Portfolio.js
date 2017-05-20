@@ -25,17 +25,6 @@ const portfolio = props => (
     </div>
 
     <div className="container">
-      <div className="row row-portfolio-filter">
-        <div className="col-md-12">
-          <ul className="filters h5" id="filters">
-            <li><a className="current" href="#" data-filter="*">All</a></li>
-            <li><a href="#" data-filter=".branding">Branding</a></li>
-            <li><a href="#" data-filter=".design">Design</a></li>
-            <li><a href="#" data-filter=".photo">Photo</a></li>
-            <li><a href="#" data-filter=".web">Web</a></li>
-          </ul>
-        </div>
-      </div>
       <div className="row row-portfolio"  data-columns="3">
         <div className="portfolio-item branding photo">
           <div className="portfolio-wrapper">

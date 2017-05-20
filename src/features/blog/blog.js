@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import BlogSnippet from './blog-snippet/Blog-Snippet';
 import Sidebar from './blog-sidebar/SideBar';
@@ -13,20 +14,19 @@ class Blog extends Component {
   }
 
   render() {
-    const { blog } = this.props;
+    const { blog, tags } = this.props;
     return (
 			<div className="wrapper">
 				<section className="module-page-title">
 					<div className="container">
 						<div className="row-page-title">
 							<div className="page-title-captions">
-								<h1 className="h5">Blog Standard</h1>
+								<h1 className="h5">Zephyr Labs Blog</h1>
 							</div>
 							<div className="page-title-secondary">
 								<ol className="breadcrumb">
-									<li className="breadcrumb-item"><a href="#">Home</a></li>
-									<li className="breadcrumb-item"><a href="#">Blog</a></li>
-									<li className="breadcrumb-item active">Blog Standard</li>
+									<li className="breadcrumb-item"><Link to="/">Home</Link></li>
+									<li className="breadcrumb-item"><Link to="#">Blog</Link></li>
 								</ol>
 							</div>
 						</div>
@@ -42,7 +42,7 @@ class Blog extends Component {
                 }
 							</div>
 
-              <Sidebar />
+              <Sidebar posts={blog.posts} tags={tags}/>
 						</div>
 					</div>
 				</section>
@@ -76,6 +76,7 @@ class Blog extends Component {
 const mapStateToProps = state => (
   {
     blog: state.blog,
+    tags: state.tag,
   }
 );
 
