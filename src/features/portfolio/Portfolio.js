@@ -10,6 +10,7 @@ import imageFive from '../../assets/images/portfolio/img-5.jpg';
 import imageSix from '../../assets/images/portfolio/img-6.jpg';
 import imageSeven from '../../assets/images/portfolio/img-7.jpg';
 import RelatedWork from './related-work';
+import './portfolio.css';
 
 class Portfolio extends Component {
 
@@ -18,9 +19,38 @@ class Portfolio extends Component {
   }
 
   state = {
+    isScrolled: false,
+    isScrolledLow: false,
     project: {
       images: [],
       relatedWork: []
+    }
+  }
+
+  stickySidebar = () => {
+    let { isScrolled } = this.state;
+
+    if(window.scrollY > 185) {
+      if(isScrolled) return;
+
+      this.setState({isScrolled: true});
+    } else {
+      if(!isScrolled) return;
+
+      this.setState({isScrolled: false});
+    }
+  }
+
+  stickySidebarLow = () => {
+    let { isScrolledLow } = this.state;
+
+    if(window.scrollY > 1565) {
+      if(isScrolledLow) return;
+      this.setState({isScrolledLow: true});
+    } else {
+      if(!isScrolledLow) return;
+
+      this.setState({isScrolledLow: false});
     }
   }
 
@@ -28,6 +58,8 @@ class Portfolio extends Component {
     document.title = "Zephyr Labs - Portfolio"
     this.setState({ project: this.props.portfolio[this.props.match.params.id - 1]});
     window.scrollTo(0,0);
+    window.addEventListener('scroll', this.stickySidebar);
+    window.addEventListener('scroll', this.stickySidebarLow);
   }
 
   render() {
@@ -61,7 +93,7 @@ class Portfolio extends Component {
 								</div>
 							</div>
 							<div className="col-lg-4" data-sticky_parent>
-								<div className="portfolio-sidebar sticky-sidebar" data-sticky_column>
+								<div className={"portfolio-sidebar sticky-sidebar " + (this.state.isScrolled ? 'make-stick ' : ' ') + (this.state.isScrolledLow ? 'low-stick' : '') }>
 									<h3 className="single-portfolio-title">{ project.title }</h3>
 									<p>{ project.description }</p>
 									<div className="portfoli-details">

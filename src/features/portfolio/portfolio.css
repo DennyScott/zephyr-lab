@@ -1,0 +1,12 @@
+.make-stick {
+  position: fixed;
+  top: 80px;
+  width: 350px;
+}
+
+.low-stick {
+    position: absolute;
+    top: auto;
+    width: 350px;
+    bottom: 0px;
+}
