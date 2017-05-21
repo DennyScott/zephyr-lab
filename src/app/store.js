@@ -3,6 +3,7 @@ import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import rootReducer from '../reducers/index';
 import blog from '../data/blog';
+import portfolio from '../data/portfolio';
 import landingPage from '../data/landing-page';
 
 
@@ -10,7 +11,8 @@ const loggerMiddleware = createLogger();
 
 const defaultState = {
   blog,
-  landingPage
+  landingPage,
+  portfolio
 };
 
 const enhancers = compose(

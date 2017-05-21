@@ -1,6 +1,15 @@
 import React from 'react';
 
 import logo from '../../assets/images/logo-light.png';
+import { connect } from 'react-redux';
+import moment from 'moment';
+
+const recentPost = post => (
+  <li key={post.id}>
+    <a href="#">{post.title}</a>
+    <span className="post-date">{moment(post.created_at).format('LLL')}</span>
+  </li>
+)
 
 const footer = props => (
   <footer className="footer">
@@ -11,9 +20,7 @@ const footer = props => (
           <aside className="widget widget_text">
             <div className="textwidget">
               <p><img src={logo} width="100" alt="" /></p>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat.</p>E-mail: <a href="mailto:support@core.com">support@core.com</a> <br/>
-              Phone: 8 800 123 4567 <br/>
-              Fax: 8 800 123 4567 <br/>
+              <p>Zephyr Labs is a design and engineering agency. We create digital experiences for high-growth organizations. Our philosophy has been simple: develop for the future today.</p>
             </div>
           </aside>
         </div>
@@ -24,9 +31,9 @@ const footer = props => (
               <h5>Recent Posts</h5>
             </div>
             <ul>
-              <li><a href="#">Experience the sound of a modern and clean 360° Bluetooth Speaker.</a> <span className="post-date">May 8, 2016</span></li>
-              <li><a href="#">Experience the sound of a modern and clean 360° Bluetooth Speaker.</a> <span className="post-date">April 7, 2016</span></li>
-              <li><a href="#">Experience the sound of a modern and clean 360° Bluetooth Speaker.</a> <span className="post-date">April 7, 2016</span></li>
+              {
+                props.posts.slice(0, 3).map(post => recentPost(post))
+              }
             </ul>
           </aside>
         </div>
@@ -34,9 +41,12 @@ const footer = props => (
           {/* Twitter widget */}
           <aside className="widget twitter-feed-widget">
             <div className="widget-title">
-              <h5>Twitter Feed</h5>
+              <h5>Contact</h5>
             </div>
-            <div className="twitter-feed" data-twitter="345170787868762112" data-number="2"></div>
+            E-mail: <a href="mailto:supprt@zephyrlabs.com">support@zephyrlabs.com</a>
+            <br/>
+            Phone: 8 800 123 4567 <br/>
+            Fax: 8 800 123 4567 <br/>
           </aside>
         </div>
         <div className="col-md-6 col-lg-3">
@@ -45,7 +55,11 @@ const footer = props => (
             <div className="widget-title">
               <h5>Tags</h5>
             </div>
-            <div className="tagcloud"><a href="#">bootstrap</a><a href="#">business</a><a href="#">corporate</a><a href="#">e-commerce</a><a href="#">portfolio</a><a href="#">responsive</a></div>
+            <div className="tagcloud">
+              {
+                props.tags.map(tag => (<a href="#" key={tag.id}>{tag.name}</a>))
+              }
+            </div>
           </aside>
         </div>
       </div>
@@ -62,4 +76,11 @@ const footer = props => (
   </footer>
 );
 
-export default footer;
+const mapStateToProps = state => (
+  {
+    posts: state.blog.posts,
+    tags: state.tag
+  }
+)
+
+export default connect(mapStateToProps)(footer);

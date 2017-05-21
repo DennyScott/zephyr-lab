@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import parallaxImage from '../../assets/images/module-4.jpg';
+import parallaxImage from '../../assets/images/office.jpg';
 
 import './landing-page.css';
 
@@ -42,7 +42,6 @@ class LandingPage extends Component {
           <AltServices />
           <News />
           <Counters />
-          <FooterImage />
   			</div>
     )
   }

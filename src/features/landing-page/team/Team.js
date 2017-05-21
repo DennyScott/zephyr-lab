@@ -12,8 +12,8 @@ const team = props => (
       <div className="row">
         <div className="col-md-8 offset-md-2">
           <div className="module-title text-center">
-            <h2>Team</h2>
-            <p className="font-serif">We’re the best professionals in this field.</p>
+            <h2>Meet the team</h2>
+            <p className="font-serif">Smarter then we look.</p>
           </div>
         </div>
       </div>
@@ -22,8 +22,8 @@ const team = props => (
           <div className="team-item m-b-30">
             <div className="team-image"><img src={teamOne} alt="" />
               <div className="team-content">
-                <h5>Jason Ford</h5>
-                <p>Designer</p>
+                <h5>Denny Scott</h5>
+                <p>Developer</p>
               </div>
               <div className="team-content-social">
                 <ul>
@@ -40,8 +40,8 @@ const team = props => (
           <div className="team-item m-b-30">
             <div className="team-image"><img src={teamTwo} alt="" />
               <div className="team-content">
-                <h5>Michael Andrews</h5>
-                <p>Developer</p>
+                <h5>Isaac Yeung</h5>
+                <p>Project Manager</p>
               </div>
               <div className="team-content-social">
                 <ul>
@@ -58,7 +58,7 @@ const team = props => (
           <div className="team-item m-b-30">
             <div className="team-image"><img src={teamThree} alt="" />
               <div className="team-content">
-                <h5>Samuel Banks</h5>
+                <h5>Travis Scott</h5>
                 <p>Developer</p>
               </div>
               <div className="team-content-social">

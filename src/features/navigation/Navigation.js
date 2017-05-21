@@ -73,7 +73,7 @@ class Navigation extends Component {
                                         <Link to="/" onClick={ () => { this.scrollTo('team') }}>Our Team</Link>
                                     </li>
                                     <li className="menu-item-has-children">
-                                        <Link to="/" onClick={ () => { this.scrollTo('services') }}>Services</Link>
+                                        <Link to="/" onClick={ () => { this.scrollTo('services') }}>Data & Analytics</Link>
                                     </li>
                                     <li className="menu-item-has-children">
                                         <Link to="/blog" onClick={ () => { this.scrollToTop() }}>Blog</Link>

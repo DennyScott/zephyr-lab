@@ -10,6 +10,7 @@ import ScrollTop from '../features/footer/scroll-top';
 import OffCanvas from '../features/off-canvas/Off-Canvas';
 import Blog from '../features/blog/blog';
 import BlogPost from '../features/blog-post/Blog-post';
+import Portfolio from '../features/portfolio/Portfolio';
 
 const history = createHistory();
 
@@ -59,6 +60,7 @@ class App extends Component {
                             <Route exact path="/" component={LandingPage}/>
                             <Route exact path="/blog" component={Blog}/>
                             <Route path="/blog/:id" component={BlogPost}/>
+                            <Route path="/portfolio/:id" component={Portfolio} />
                         </div>
                     </Router>
                     <Footer/>

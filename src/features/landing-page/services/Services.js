@@ -10,54 +10,45 @@ const services = (props) => (
           <div className="icon-box text-center">
             <div className="icon-box-icon"><span className="icon icon-basic-pencil-ruler"></span></div>
             <div className="icon-box-title">
-              <h6>Excellent Designs</h6>
+              <h6>Design</h6>
             </div>
             <div className="icon-box-content">
-              <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum dolor sit amet.</p>
+              <p>We are graphic designers.  From marketing material to user-interface, we design it all!</p>
             </div>
-            <div className="icon-box-link"><a href="#">Take a tour</a></div>
           </div>
         </div>
         <div className="col-md-3">
           <div className="icon-box text-center">
             <div className="icon-box-icon"><span className="icon icon-basic-paperplane"></span></div>
             <div className="icon-box-title">
-              <h6>Fully Responsive</h6>
+              <h6>Development</h6>
             </div>
             <div className="icon-box-content">
-              <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum dolor sit amet.</p>
+              <p>Let us create your website, software, or web-based application. We can build to any platform you need.</p>
             </div>
-            <div className="icon-box-link"><a href="#">Take a tour</a></div>
           </div>
         </div>
         <div className="col-md-3">
           <div className="icon-box text-center">
             <div className="icon-box-icon"><span className="icon icon-basic-heart"></span></div>
             <div className="icon-box-title">
-              <h6>User Friendly</h6>
+              <h6>Modern Web</h6>
             </div>
             <div className="icon-box-content">
-              <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum dolor sit amet.</p>
+              <p>Don't allow your online presence to fall behind in the times. Let us show you what the web is capable of today.</p>
             </div>
-            <div className="icon-box-link"><a href="#">Take a tour</a></div>
           </div>
         </div>
         <div className="col-md-3">
           <div className="icon-box text-center">
             <div className="icon-box-icon"><span className="icon icon-basic-server-download"></span></div>
             <div className="icon-box-title">
-              <h6>Free Updates</h6>
+              <h6>Mobile Applications</h6>
             </div>
             <div className="icon-box-content">
-              <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum dolor sit amet.</p>
+              <p>We develop apps for iPhone, iPad, Android, Windows 8 and many more. We can create what you want.</p>
             </div>
-            <div className="icon-box-link"><a href="#">Take a tour</a></div>
           </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-12">
-          <div className="m-b-100"></div>
         </div>
       </div>
     </div>

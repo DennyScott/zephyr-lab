@@ -6,7 +6,7 @@ export default class Bars extends Component {
 
   render() {
     return (
-      <section className="module module-gray p-t-0">
+      <section className="module module-gray bars">
         <div className="container">
           <div className="row">
             <div className="col-md-6">

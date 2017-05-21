@@ -1,0 +1,12 @@
+.related-work .portfolio-overlay {
+  z-index: 10;
+  cursor: pointer;
+}
+
+.related-work .portfolio-overlay:hover {
+  opacity: 1;
+}
+
+.related-work .portfolio-caption {
+  opacity: 1;
+}

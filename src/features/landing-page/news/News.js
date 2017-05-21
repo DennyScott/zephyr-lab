@@ -40,12 +40,12 @@ const news = props => (
         <div className="col-md-8 offset-md-2">
           <div className="module-title text-center">
             <h2>Our News</h2>
-            <p className="font-serif">We share our best ideas in our blog.</p>
+            <p className="font-serif">Gain some insight into our processes</p>
           </div>
         </div>
       </div>
       <div className="row blog-grid">
-        {article(props.blog.posts)} 
+        {article(props.blog.posts)}
       </div>
       <div className="row m-t-50">
         <div className="col-md-12">
