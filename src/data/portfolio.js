@@ -1,6 +1,3 @@
-import imageOne from '../assets/images/portfolio/img-1.jpg';
-import imageTwo from '../assets/images/portfolio/img-2.jpg';
-import imageThree from '../assets/images/portfolio/img-3.jpg';
 import imageFour from '../assets/images/portfolio/img-4.jpg';
 import imageFive from '../assets/images/portfolio/img-5.jpg';
 import imageSix from '../assets/images/portfolio/img-6.jpg';

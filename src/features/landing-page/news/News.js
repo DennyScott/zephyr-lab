@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 import moment from 'moment';
 
 import blogOne from '../../../assets/images/blog/1.jpg';
-import blogTwo from '../../../assets/images/blog/2.jpg';
-import blogThree from '../../../assets/images/blog/3.jpg';
 
 const post = blog => (
   <article className="post">

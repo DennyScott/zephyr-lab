@@ -3,13 +3,6 @@ import { Element } from 'react-scroll';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import imageOne from '../../../assets/images/portfolio/img-1.jpg';
-import imageSeven from '../../../assets/images/portfolio/img-7.jpg';
-import imageThree from '../../../assets/images/portfolio/img-3.jpg';
-import imageFour from '../../../assets/images/portfolio/img-4.jpg';
-import imageFive from '../../../assets/images/portfolio/img-5.jpg';
-import imageSix from '../../../assets/images/portfolio/img-6.jpg';
-
 import './portfolio.css';
 
 const portfolioItem = project => (

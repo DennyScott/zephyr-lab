@@ -2,13 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import imageOne from '../../assets/images/portfolio/img-1.jpg';
-import imageTwo from '../../assets/images/portfolio/img-2.jpg';
-import imageThree from '../../assets/images/portfolio/img-3.jpg';
-import imageFour from '../../assets/images/portfolio/img-4.jpg';
-import imageFive from '../../assets/images/portfolio/img-5.jpg';
-import imageSix from '../../assets/images/portfolio/img-6.jpg';
-import imageSeven from '../../assets/images/portfolio/img-7.jpg';
 import RelatedWork from './related-work';
 import './portfolio.css';
 
@@ -16,6 +9,7 @@ class Portfolio extends Component {
 
   constructor(props) {
     super(props);
+    this.isMount = false;
   }
 
   state = {
@@ -28,6 +22,7 @@ class Portfolio extends Component {
   }
 
   stickySidebar = () => {
+    if(!this.isMount) return;
     let { isScrolled } = this.state;
 
     if(window.scrollY > 185) {
@@ -42,6 +37,7 @@ class Portfolio extends Component {
   }
 
   stickySidebarLow = () => {
+    if(!this.isMount) return;
     let { isScrolledLow } = this.state;
 
     if(window.scrollY > 1565) {
@@ -58,8 +54,13 @@ class Portfolio extends Component {
     document.title = "Zephyr Labs - Portfolio"
     this.setState({ project: this.props.portfolio[this.props.match.params.id - 1]});
     window.scrollTo(0,0);
+    this.isMount = true;
     window.addEventListener('scroll', this.stickySidebar);
     window.addEventListener('scroll', this.stickySidebarLow);
+  }
+
+  componentWillUnmount() {
+    this.isMount = false;
   }
 
   render() {

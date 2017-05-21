@@ -16,7 +16,6 @@ import Testimonials from './testimonials/Testimonials';
 import AltServices from './alt-services/Alt-Services';
 import News from './news/News';
 import Counters from './counters/Counters';
-import FooterImage from './footer-image/Footer-Image';
 
 class LandingPage extends Component {
 

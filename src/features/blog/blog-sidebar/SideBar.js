@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 
 import widgetImageOne from '../../../assets/images/widgets/1.jpg';
-import widgetImageTwo from '../../../assets/images/widgets/2.jpg';
-import widgetImageThree from '../../../assets/images/widgets/3.jpg';
 
 const category = tag => (
   <li key={tag.id}> {tag.name} </li>
