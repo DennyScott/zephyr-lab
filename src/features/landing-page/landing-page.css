@@ -1,6 +1,7 @@
 .full-video {
-  height: 100%;
   width: auto;
+  min-width: 100%;
+  min-height: 100%;
   position: absolute;
   left: 0;
   right: 0;

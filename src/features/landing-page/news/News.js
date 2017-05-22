@@ -3,11 +3,14 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
 
-import blogOne from '../../../assets/images/blog/1.jpg';
 
 const post = blog => (
   <article className="post">
-    <div className="post-preview"><Link to={`blog${blog.url}`}><img src={blogOne} alt="" /></Link></div>
+    <div className="post-preview">
+      <Link to={`blog${blog.url}`}>
+        <img src={blog.image === null ? "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg" : blog.image} alt="" />
+      </Link>
+    </div>
     <div className="post-wrapper">
       <div className="post-header">
         <h2 className="post-title"><a href="blog-single.html">{blog.title}</a></h2>
