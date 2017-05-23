@@ -13,7 +13,7 @@ const post = blog => (
     </div>
     <div className="post-wrapper">
       <div className="post-header">
-        <h2 className="post-title"><a href="blog-single.html">{blog.title}</a></h2>
+        <h2 className="post-title"><Link to={`blog${blog.url}`}>{blog.title}</Link></h2>
         <ul className="post-meta h5">
           <li>{moment(blog.published_at).format('LLL')}</li>
         </ul>

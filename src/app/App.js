@@ -28,9 +28,9 @@ class App extends Component {
     }
 
     componentDidMount() {
-      if(!location.href.includes('localhost:3000')) {
-        ReactGA.set({page: location.pathname});
-        ReactGA.pageview(location.pathname);
+      if(!window.location.href.includes('localhost:3000')) {
+        ReactGA.set({page: window.location.pathname});
+        ReactGA.pageview(window.location.pathname);
       }
 
         setTimeout(() => {
