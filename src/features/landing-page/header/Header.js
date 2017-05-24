@@ -1,5 +1,5 @@
 import React from 'react';
-import video from '../../../assets/video/5mb.mp4';
+import video from '../../../assets/video/2mb.mp4';
 import videoPoster from '../../../assets/video/background.png';
 import { Link } from 'react-router-dom';
 import { Element, scroller } from 'react-scroll';
