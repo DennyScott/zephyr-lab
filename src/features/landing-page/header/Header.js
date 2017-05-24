@@ -1,6 +1,6 @@
 import React from 'react';
-import video from '../../../assets/video/video.mp4';
-import videoPoster from '../../../assets/video/video.jpg';
+import video from '../../../assets/video/5mb.mp4';
+import videoPoster from '../../../assets/video/background.png';
 import { Link } from 'react-router-dom';
 import { Element, scroller } from 'react-scroll';
 
@@ -9,7 +9,7 @@ const scrollDown = () => {
 }
 
 const Header = (props) => (
-  <section className="module-header full-height parallax bg-dark bg-dark-90">
+  <section className="module-header full-height parallax bg-dark bg-dark-60">
   <Element name="home" />
   <div className="container">
     <div className="row">

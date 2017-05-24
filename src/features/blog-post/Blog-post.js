@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import moment from 'moment';
+import { Link } from 'react-router-dom';
 
 import store from '../../app/store';
 import { fetchPost } from '../../actions/blog.js';
@@ -20,12 +21,30 @@ class BlogPost extends Component {
 
   componentWillMount() {
     store.dispatch(fetchPost(this.props.match.params.id));
+    window.scrollTo(0,0);
   }
 
   render() {
-    const { post } = this.props;
+    const { post, posts, tags } = this.props;
     return (
+      <div className="wrapper">
+        <section className="module-page-title">
+					<div className="container">
+						<div className="row-page-title">
+							<div className="page-title-captions">
+								<h1 className="h5">Zephyr Labs Blog - {post.title}</h1>
+							</div>
+							<div className="page-title-secondary">
+								<ol className="breadcrumb">
+									<li className="breadcrumb-item"><Link to="/">Home</Link></li>
+									<li className="breadcrumb-item"><Link to="/blog">Blog</Link></li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</section>
       <div className="Blog-Post module container">
+
         <div className="row">
           <div className="col-lg-8">
         <article className="post">
@@ -42,9 +61,10 @@ class BlogPost extends Component {
           </div>
         </article>
       </div>
-        <Sidebar />
+        <Sidebar posts={posts} tags={tags}/>
         </div>
       </div>
+    </div>
     );
   }
 }
@@ -52,6 +72,8 @@ class BlogPost extends Component {
 const mapStateToProps = state => (
   {
     post : state.post,
+    posts: state.blog.posts,
+    tags: state.tag,
   }
 );
 

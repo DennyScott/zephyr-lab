@@ -4,5 +4,5 @@
   display: -webkit-box;
    -webkit-box-orient: vertical;
    -webkit-line-clamp: 10; /* number of lines to show */
-   max-height: 20rem;       /* fallback */
+   max-height: 10rem;       /* fallback */
 }

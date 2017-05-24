@@ -1,4 +1,5 @@
 import fetch from 'isomorphic-fetch';
+import store from '../app/store';
 
 const default_params = {
   clientId: "ghost-frontend",
@@ -82,10 +83,8 @@ export function fetchBlog(blog) {
 export function fetchPost(postId) {
   return function(dispatch) {
     dispatch(requestPost(postId));
-
-    return fetch(`${blogUrl}posts/${postId}?${clientUrl}&include=tags`)
-      .then(response => response.json())
-      .then(json => dispatch(receivePost(postId, json)));
+    const json = store.getState().blog.posts[postId - 1];
+    return Promise.resolve(dispatch(receivePost(postId, json)));
 
   }
 }

@@ -13,16 +13,6 @@ import './assets/css/template.css';
 
 import store from './app/store';
 
-store.dispatch(fetchBlog('posts')).then(() =>
-  console.log(store.getState()),
-  err => console.log(err)
-)
-
-store.dispatch(fetchTags('tags')).then(() =>
-  console.log(store.getState()),
-  err => console.log(err)
-)
-
 ReactDOM.render(
   <Provider store={store}>
     <App />

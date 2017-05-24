@@ -26,7 +26,7 @@ class Blog extends Component {
 							<div className="page-title-secondary">
 								<ol className="breadcrumb">
 									<li className="breadcrumb-item"><Link to="/">Home</Link></li>
-									<li className="breadcrumb-item"><Link to="#">Blog</Link></li>
+									<li className="breadcrumb-item"><Link to="/blog">Blog</Link></li>
 								</ol>
 							</div>
 						</div>
@@ -46,27 +46,6 @@ class Blog extends Component {
 						</div>
 					</div>
 				</section>
-
-				<section className="module-sm module-gray">
-					<div className="container">
-						<div className="row">
-							<div className="col-sm-12">
-								<nav>
-									<ul className="pagination h4">
-										<li className="page-item next"><a className="page-link" href="#"><span className="arrows arrows-arrows-slim-right"></span></a></li>
-										<li className="page-item active"><a className="page-link" href="#">1</a></li>
-										<li className="page-item"><a className="page-link" href="#">2</a></li>
-										<li className="page-item"><a className="page-link" href="#">3</a></li>
-										<li className="page-item"><a className="page-link" href="#">4</a></li>
-										<li className="page-item"><a className="page-link" href="#">5</a></li>
-										<li className="page-item prev"><a className="page-link" href="#"><span className="arrows arrows-arrows-slim-left"></span></a></li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</section>
-
 				<a className="scroll-top" href="#top"><i className="fa fa-angle-up"></i></a>
 			</div>
     );

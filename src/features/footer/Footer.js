@@ -57,7 +57,7 @@ const footer = props => (
             </div>
             <div className="tagcloud">
               {
-                props.tags.map(tag => (<a href="#" key={tag.id}>{tag.name}</a>))
+                props.tags.map((tag, i) => (<a href="#" key={i}>{tag}</a>))
               }
             </div>
           </aside>

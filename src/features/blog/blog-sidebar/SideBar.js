@@ -4,8 +4,8 @@ import moment from 'moment';
 
 import widgetImageOne from '../../../assets/images/widgets/1.jpg';
 
-const category = tag => (
-  <li key={tag.id}> {tag.name} </li>
+const category = (tag, i) => (
+  <li key={i}> {tag} </li>
 )
 
 const recentPosts = post => (
@@ -29,7 +29,7 @@ const sidebar = props => {
           </div>
           <ul>
             {
-              props.tags.map(tag => category(tag))
+              props.tags.map((tag, i) => category(tag, i))
             }
           </ul>
         </aside>

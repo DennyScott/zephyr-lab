@@ -1,9 +1,9 @@
 import { RECEIVE_POST } from '../actions/blog';
 
-const post = (state = [], action) => {
+const post = (state = {}, action) => {
   switch(action.type) {
     case RECEIVE_POST:
-      return action.data.posts[0];
+      return action.data;
     default:
       return state;
   }

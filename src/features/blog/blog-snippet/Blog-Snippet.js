@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
 
-const tagSnippet = tag => (
-  <a key={tag.id} href="#">{tag.name} </a>
+const tagSnippet = (tag, i) => (
+  <a key={i} href="#">{tag} </a>
 )
 
 const blogSnippet = props => {
@@ -22,7 +22,7 @@ const blogSnippet = props => {
             <li>{moment(blog.created_at).format('LLL')}</li>
             <li>
               {
-                blog.tags.map(tag => tagSnippet(tag))
+                blog.tags.map((tag,i) => tagSnippet(tag, i))
               }
             </li>
           </ul>
@@ -43,7 +43,7 @@ blogSnippet.propTypes = {
     image: PropTypes.string,
     title: PropTypes.string.isRequired,
     created_at: PropTypes.string.isRequired,
-    markdown: PropTypes.string.isRequired,
+    html: PropTypes.string.isRequired,
   })
 }
 

@@ -12,10 +12,19 @@ export default class Counter extends Component {
   constructor(props) {
     super(props);
     this.state = { counter: 0, intervalId: 0, visibleActive: true }
+    this.isMount = false;
+  }
+
+  componentDidMount() {
+    this.isMount = true;
+  }
+
+  componentWillUnmount() {
+    this.isMount = false;
   }
 
   onVisibleChange = (isVisible) => {
-    if(isVisible && this.state.visibleActive) {
+    if(isVisible && this.state.visibleActive && this.isMount) {
       this.setState({visibleActive: false});
       this.incrementNumbers();
     }
@@ -27,10 +36,13 @@ export default class Counter extends Component {
       return;
     }
 
-    this.setState({counter: this.state.counter + 1});
+    if(this.isMount)
+      this.setState({counter: this.state.counter + 1});
   }
 
   incrementNumbers = () => {
+    if(!this.isMount) return;
+
     let intervalId = setInterval(this.incrementNumber, 1000 / this.props.to);
     this.setState({intervalId: intervalId});
   }
