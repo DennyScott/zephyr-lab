@@ -83,7 +83,9 @@ export function fetchBlog(blog) {
 export function fetchPost(postId) {
   return function(dispatch) {
     dispatch(requestPost(postId));
-    const json = store.getState().blog.posts[postId - 1];
+    console.log(store.getState().blog.posts.find(post => post.id === parseInt(postId)));
+    console.log(postId);
+    const json = store.getState().blog.posts.find(post => post.id === parseInt(postId));
     return Promise.resolve(dispatch(receivePost(postId, json)));
 
   }

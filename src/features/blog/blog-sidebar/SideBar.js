@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import { Link } from 'react-router-dom';
 
 import widgetImageOne from '../../../assets/images/widgets/1.jpg';
 
@@ -10,9 +11,9 @@ const category = (tag, i) => (
 
 const recentPosts = post => (
   <li key={post.id} className="clearfix">
-    <div className="wi"><a href="#"><img src={widgetImageOne} alt="" /></a></div>
+    <div className="wi"><Link to={`/blog/${post.id}`}><img src={widgetImageOne} alt="" /></Link></div>
     <div className="wb">
-      <a href="#">{post.title}</a>
+      <Link to={`/blog/${post.id}`}>{post.title}</Link>
       <span className="post-date">{moment(post.created_at).format('LLL')}</span>
     </div>
   </li>

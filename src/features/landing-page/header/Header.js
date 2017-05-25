@@ -1,6 +1,6 @@
 import React from 'react';
 import video from '../../../assets/video/2mb.mp4';
-import videoPoster from '../../../assets/video/background.png';
+import videoPoster from '../../../assets/video/background.jpg';
 import { Link } from 'react-router-dom';
 import { Element, scroller } from 'react-scroll';
 
@@ -17,7 +17,7 @@ const Header = (props) => (
         <h1 className="h6 m-b-20">THINK. DEFINE. DESIGN.</h1>
         <h1 className="h1 m-b-20">Zephyr Labs</h1>
         <p className="m-b-40">Realize your products today.</p>
-        <p><Link to="/" className="btn btn-lg btn-circle btn-brand" onClick={scrollDown }>Let’s get started!</Link></p>
+        <p><Link to="/" className="btn btn-lg btn-circle btn-brand" onClick={scrollDown}>Let’s get started!</Link></p>
       </div>
     </div>
   </div>

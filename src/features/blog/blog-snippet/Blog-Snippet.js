@@ -27,11 +27,10 @@ const blogSnippet = props => {
             </li>
           </ul>
         </div>
-        <div className="post-content" dangerouslySetInnerHTML={{__html: blog.html}}>
+        <div className="post-content" dangerouslySetInnerHTML={{__html: blog.text}}>
         </div>
         <div className="post-more">
           <Link onClick={() => window.scrollTo(0,0)} to={url}>Read more →</Link>
-
           </div>
       </div>
     </article>

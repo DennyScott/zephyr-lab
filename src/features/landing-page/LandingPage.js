@@ -40,7 +40,6 @@ class LandingPage extends Component {
           <Testimonials image={parallaxImage}/>
           <AltServices />
           <News />
-          <Counters />
   			</div>
     )
   }

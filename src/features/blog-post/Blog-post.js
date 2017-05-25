@@ -19,9 +19,17 @@ class BlogPost extends Component {
     }).isRequired
   }
 
-  componentWillMount() {
-    store.dispatch(fetchPost(this.props.match.params.id));
+  dispatchPost(props) {
+    store.dispatch(fetchPost(props.match.params.id));
     window.scrollTo(0,0);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.dispatchPost(nextProps);
+  }
+
+  componentDidMount() {
+    this.dispatchPost(this.props);
   }
 
   render() {
