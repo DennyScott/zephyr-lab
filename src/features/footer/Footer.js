@@ -19,8 +19,8 @@ const footer = props => (
           {/* Text widget */}
           <aside className="widget widget_text">
             <div className="textwidget">
-              <p><img src={logo} width="100" alt="" /></p>
-              <p>Zephyr Labs is a design and engineering agency. We create digital experiences for high-growth organizations. Our philosophy has been simple: develop for the future today.</p>
+              <h3>Travis Scott</h3>
+              <p>I'm a Unity developer who has developed games for a wide variety of platforms and services, such as point of sale product displays, to worlds built and explored in VR. </p> <p> Also a board game enthusiast.</p>
             </div>
           </aside>
         </div>
@@ -43,10 +43,10 @@ const footer = props => (
             <div className="widget-title">
               <h5>Contact</h5>
             </div>
-            E-mail: <a href="mailto:supprt@zephyrlabs.com">support@zephyrlabs.com</a>
+            E-mail: <a href="mailto:travisscott301@gmail.com">travisscott301@gmail.com</a>
             <br/>
-            Phone: 8 800 123 4567 <br/>
-            Fax: 8 800 123 4567 <br/>
+            LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/travis-scott-8a6b6584/">My Profile</a> <br/>
+            Phone: 1 204 299 6870 <br/>
           </aside>
         </div>
         <div className="col-md-6 col-lg-3">
@@ -68,7 +68,7 @@ const footer = props => (
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div className="text-center"><span className="copyright">© 2017 Zephyr Labs, All Rights Reserved.</span></div>
+            <div className="text-center"><span className="copyright">© 2017 Travis Scott, All Rights Reserved.</span></div>
           </div>
         </div>
       </div>

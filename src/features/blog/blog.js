@@ -21,7 +21,7 @@ class Blog extends Component {
 					<div className="container">
 						<div className="row-page-title">
 							<div className="page-title-captions">
-								<h1 className="h5">Zephyr Labs Blog</h1>
+								<h1 className="h5">Travis Scott's Blog</h1>
 							</div>
 							<div className="page-title-secondary">
 								<ol className="breadcrumb">
