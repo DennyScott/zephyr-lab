@@ -2406,6 +2406,7 @@ select.form-control-sm:not([size]):not([multiple]) {
 
 .header.header-light .brand-dark {
     display: inline-block;
+    color: black;
 }
 
 .header.header-light .brand-light {
@@ -2414,6 +2415,7 @@ select.form-control-sm:not([size]):not([multiple]) {
 
 .header.header-light.landing-page .brand-light {
   display: inline-block;
+  color: white;
 }
 
 .header.header-light.landing-page .brand-dark {
@@ -2633,6 +2635,7 @@ select.form-control-sm:not([size]):not([multiple]) {
     .header.header-small .brand-dark,
     .header.header-light.header-small .brand-dark {
         display: inline-block;
+        color: black;
     }
 
     .header.landing-page {
@@ -2645,6 +2648,7 @@ select.form-control-sm:not([size]):not([multiple]) {
     .header.header-small .brand-light,
     .header.header-light.header-small .brand-light {
         display: none;
+        color: white;
     }
 
     .header .inner-nav > ul > li > a,

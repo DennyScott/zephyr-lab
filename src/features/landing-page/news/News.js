@@ -41,7 +41,7 @@ const news = props => (
       <div className="row">
         <div className="col-md-8 offset-md-2">
           <div className="module-title text-center">
-            <h2>Our News</h2>
+            <h2>Blog</h2>
             <p className="font-serif">Gain some insight into our processes</p>
           </div>
         </div>

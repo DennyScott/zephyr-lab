@@ -25,8 +25,8 @@ const portfolio = props => (
       <div className="row">
         <div className="col-md-8 offset-md-2">
           <div className="module-title text-center">
-            <h2>Case Studies</h2>
-            <p className="font-serif">An eye for detail makes our works excellent.</p>
+            <h2>Projects</h2>
+            <p className="font-serif">A collection of my previous works.</p>
           </div>
         </div>
       </div>
