@@ -3250,6 +3250,8 @@ select.form-control-sm:not([size]):not([multiple]) {
 .portfolio-overlay,
 .portfolio-subtitle,
 .portfolio-wrapper img {
+    height: 200px;
+    width: 350px;
     -webkit-transition: all .3s cubic-bezier(.3, .1, .58, 1);
             transition: all .3s cubic-bezier(.3, .1, .58, 1);
 }
@@ -3257,6 +3259,7 @@ select.form-control-sm:not([size]):not([multiple]) {
 .portfolio-wrapper {
     position: relative;
     overflow: hidden;
+    padding:20px;
 }
 
 .portfolio-overlay {
@@ -3281,6 +3284,9 @@ select.form-control-sm:not([size]):not([multiple]) {
     top: 50%;
     left: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .portfolio-title {
@@ -3290,11 +3296,13 @@ select.form-control-sm:not([size]):not([multiple]) {
     font-size: 12px;
     color: #fff;
     margin: 0;
+    height: auto;
 }
 
 .portfolio-subtitle {
     font-size: 14px;
     opacity: .7;
+    height: auto;
 }
 
 .portfolio-link {
