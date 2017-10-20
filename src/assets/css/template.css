@@ -2093,6 +2093,15 @@ select.form-control-sm:not([size]):not([multiple]) {
 
 .inner-header {
     vertical-align: middle;
+    position:absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header > .container-fluid {
+    width: 100%;
 }
 
 .inner-nav {
@@ -2107,7 +2116,6 @@ select.form-control-sm:not([size]):not([multiple]) {
 }
 
 .nav-toogle,
-.inner-header,
 .inner-navigation {
     display: table-cell;
     height: 100%;
