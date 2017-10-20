@@ -20,7 +20,7 @@ import Counters from './counters/Counters';
 class LandingPage extends Component {
 
   componentDidMount() {
-    document.title = "Zephyr Labs";
+    document.title = "Travis Scott";
   }
 
   render() {

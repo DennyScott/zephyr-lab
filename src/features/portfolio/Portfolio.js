@@ -51,7 +51,7 @@ class Portfolio extends Component {
   }
 
   componentDidMount() {
-    document.title = "Zephyr Labs - Portfolio"
+    document.title = "Travis Scott - Portfolio"
     this.setState({ project: this.props.portfolio[this.props.match.params.id - 1]});
     window.scrollTo(0,0);
     this.isMount = true;
