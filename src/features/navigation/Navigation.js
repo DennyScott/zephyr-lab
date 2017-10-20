@@ -55,8 +55,8 @@ class Navigation extends Component {
                 <div className="container-fluid">
                     <div className="inner-header">
                         <Link className="inner-brand" to="/" onClick={ () => { this.scrollToTop() }}>
-                            <img className="brand-dark" src={logo} width="77px" alt="" />
-                            <img className="brand-light" src={logoLight} width="77px" alt=""/>
+                            <span className="brand-dark">Travis Scott</span>
+                            <span className="brand-light">Travis Scott</span> 
                         </Link>
                     </div>
                     <div className="inner-navigation collapse">
@@ -67,13 +67,13 @@ class Navigation extends Component {
                                         <Link to="/" onClick={ () => { this.scrollToTop()}}>Home</Link>
                                     </li>
                                     <li className="menu-item-has-children menu-item-has-mega-menu">
-                                        <Link to="/" onClick={() => { this.scrollTo('portfolio') } }>Case Studies</Link>
+                                        <Link to="/" onClick={() => { this.scrollTo('portfolio') } }>Projects</Link>
                                     </li>
                                     <li className="menu-item-has-children">
-                                        <Link to="/" onClick={ () => { this.scrollTo('team') }}>Our Team</Link>
+                                        <Link to="/" onClick={ () => { this.scrollTo('team') }}>Past Experience</Link>
                                     </li>
                                     <li className="menu-item-has-children">
-                                        <Link to="/" onClick={ () => { this.scrollTo('services') }}>Data & Analytics</Link>
+                                        <Link to="/" onClick={ () => { this.scrollTo('services') }}>General Skills</Link>
                                     </li>
                                     <li className="menu-item-has-children">
                                         <Link to="/blog" onClick={ () => { this.scrollToTop() }}>Blog</Link>
