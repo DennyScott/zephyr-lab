@@ -10,14 +10,14 @@ export default class Bars extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <ProgressBar title="gulp" width="25%" />
-              <ProgressBar title="UX Design" width="80%" />
-              <ProgressBar title="HTML / CSS3 / SASS" width="80%" />
+              <ProgressBar title="Gameplay Programming" width="90%" />
+              <ProgressBar title="C#" width="80%" />
+              <ProgressBar title="Tools Development" width="60%" />
             </div>
             <div className="col-md-6">
-              <ProgressBar title="gulp" width="25%" />
-              <ProgressBar title="UX Design" width="80%" />
-              <ProgressBar title="HTML / CSS3 / SASS" width="80%" />
+              <ProgressBar title="C++" width="50%" />
+              <ProgressBar title="Unity" width="90%" />
+              <ProgressBar title="Javascript" width="70%" />
             </div>
           </div>
         </div>

@@ -14,10 +14,9 @@ const Header = (props) => (
   <div className="container">
     <div className="row">
       <div className="col-md-12">
-        <h1 className="h6 m-b-20">THINK. DEFINE. DESIGN.</h1>
-        <h1 className="h1 m-b-20">Zephyr Labs</h1>
-        <p className="m-b-40">Realize your products today.</p>
-        <p><Link to="/" className="btn btn-lg btn-circle btn-brand" onClick={scrollDown}>Let’s get started!</Link></p>
+        <h1 className="h1 m-b-20">Travis Scott</h1>
+        <p className="m-b-40">Developer - Game Designer - Board Game Enthusiast.</p>
+        <p><Link to="/" className="btn btn-lg btn-circle btn-brand" onClick={scrollDown}>See my Projects</Link></p>
       </div>
     </div>
   </div>

@@ -42,18 +42,12 @@ class App extends Component {
     }
 
 
-    toggleSideMenu = () => this.setState({
-        displaySideMenu: !this.state.displaySideMenu
-    });
-
-    onLayoutClick = () => this.state.displaySideMenu && this.toggleSideMenu();
-
     render() {
         return (
             <div className="App">
                 <div className={"layout " + (this.state.displaySideMenu
                     ? 'off-canvas-sidebar-open'
-                    : '')} style={this.fadeIn} onClick={() => this.onLayoutClick()}>
+                    : '')} style={this.fadeIn}>
                     <Router history={history}>
                         <div>
                             <Navigation toggleSideMenu={this.toggleSideMenu}/>
@@ -65,8 +59,6 @@ class App extends Component {
                     </Router>
                     <Footer/>
                     <ScrollTop/>
-
-                    <OffCanvas toggleSideMenu={this.toggleSideMenu}/>
                 </div>
             </div>
         );
