@@ -10,10 +10,10 @@ const services = (props) => (
           <div className="icon-box text-center">
             <div className="icon-box-icon"><span className="icon icon-basic-pencil-ruler"></span></div>
             <div className="icon-box-title">
-              <h6>Design</h6>
+              <h6>VR</h6>
             </div>
             <div className="icon-box-content">
-              <p>We are graphic designers.  From marketing material to user-interface, we design it all!</p>
+              <p>Developed Virtual Reality games targetting mediums such as Occulus Rift and Google VR.</p>
             </div>
           </div>
         </div>
@@ -21,10 +21,10 @@ const services = (props) => (
           <div className="icon-box text-center">
             <div className="icon-box-icon"><span className="icon icon-basic-paperplane"></span></div>
             <div className="icon-box-title">
-              <h6>Development</h6>
+              <h6>Cross Platform Development</h6>
             </div>
             <div className="icon-box-content">
-              <p>Let us create your website, software, or web-based application. We can build to any platform you need.</p>
+              <p>Released projects that target multiple platforms ranging from PC, to in-store tablets, to mobile apps.</p>
             </div>
           </div>
         </div>
@@ -32,10 +32,10 @@ const services = (props) => (
           <div className="icon-box text-center">
             <div className="icon-box-icon"><span className="icon icon-basic-heart"></span></div>
             <div className="icon-box-title">
-              <h6>Modern Web</h6>
+              <h6>Multi-Disciplinary</h6>
             </div>
             <div className="icon-box-content">
-              <p>Don't allow your online presence to fall behind in the times. Let us show you what the web is capable of today.</p>
+              <p>A wide-breadth of experience, including consumer apps for in store purchases, and top-down 2d games.</p>
             </div>
           </div>
         </div>
@@ -43,10 +43,10 @@ const services = (props) => (
           <div className="icon-box text-center">
             <div className="icon-box-icon"><span className="icon icon-basic-server-download"></span></div>
             <div className="icon-box-title">
-              <h6>Mobile Applications</h6>
+              <h6>Technical Lead</h6>
             </div>
             <div className="icon-box-content">
-              <p>We develop apps for iPhone, iPad, Android, Windows 8 and many more. We can create what you want.</p>
+              <p>Lead multiple small teams with wide varieties in experience, developing and releasing small to corporate projects.</p>
             </div>
           </div>
         </div>

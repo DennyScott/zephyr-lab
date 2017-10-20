@@ -35,7 +35,6 @@ class LandingPage extends Component {
           <Bars />
 
           <Portfolio />
-          <ExtendedServices />
           <Team />
           <Testimonials image={parallaxImage}/>
           <AltServices />

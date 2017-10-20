@@ -82,23 +82,6 @@ class Navigation extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="extra-nav">
-                        <ul>
-                            <li>
-                                <a className="open-offcanvas" href="#" onClick={() => {this.props.toggleSideMenu()}}>
-                                    <span>Menu</span>
-                                    <span className="fa fa-bars"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="nav-toogle">
-                        <a href="#" data-toggle="collapse" data-target=".inner-navigation">
-                            <span className="icon-bar"></span>
-                            <span className="icon-bar"></span>
-                            <span className="icon-bar"></span>
-                        </a>
-                    </div>
                 </div>
             </header>
         );
