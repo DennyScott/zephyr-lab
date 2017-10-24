@@ -13,7 +13,7 @@ const team = props => (
         <div className="col-md-8 offset-md-2">
           <div className="module-title text-center">
             <h2>Past Experience</h2>
-            <p className="font-serif">Smarter then we look.</p>
+            <p className="font-serif">A link to the past</p>
           </div>
         </div>
       </div>

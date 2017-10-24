@@ -34,6 +34,17 @@ return (
               </div>
               <div className="tms-content">
                 <blockquote>
+                  <p>“If you cannot do great things, do small things in a great way.”</p>
+                </blockquote>
+              </div>
+              <div className="tms-author"><span>Napoleon Hill</span></div>
+            </div>
+            <div className="tms-item">
+              <div className="tms-icons">
+                <h2><span className="icon icon-basic-message-multiple"></span></h2>
+              </div>
+              <div className="tms-content">
+                <blockquote>
                   <p>“If you want to know what a mans like, take a good look at how he treats his inferiors, not his equals.”</p>
                 </blockquote>
               </div>
@@ -45,21 +56,10 @@ return (
               </div>
               <div className="tms-content">
                 <blockquote>
-                  <p>“To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.”</p>
+                  <p>“It’s all that Ocarina kid’s fault!  Next time he comes around here, I’m gonna mess him up!”</p>
                 </blockquote>
               </div>
-              <div className="tms-author"><span>Ralph Waldo Emerson</span></div>
-            </div>
-            <div className="tms-item">
-              <div className="tms-icons">
-                <h2><span className="icon icon-basic-message-multiple"></span></h2>
-              </div>
-              <div className="tms-content">
-                <blockquote>
-                  <p>“Imperfection is beauty, madness is genius and its better to be absolutely ridiculous than absolutely boring.”</p>
-                </blockquote>
-              </div>
-              <div className="tms-author"><span>Marilyn Monroe</span></div>
+              <div className="tms-author"><span>Guru-guru</span></div>
             </div>
           </Slider>
         </div>
