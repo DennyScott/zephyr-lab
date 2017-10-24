@@ -1,4 +1,3 @@
-import staticSiteGenerator from './static-site-generator.md';
 import debateGameJam from './debate-game-jam.md';
 import delegateEvents from './delegates-events.md';
 import firstPersonPuzzle from './first-person-puzzle.md';
@@ -16,17 +15,6 @@ import zephyrCodeCleanupTwo from './zephyr-code-cleanup-2.md';
 import zephyrCodeCleanupThree from './zephyr-code-cleanup-3.md';
 
 import striptags from 'striptags';
-
-const blogOne = {
-  title: "Static Site Generator",
-  author: "Denny Scott",
-  created_at: "2017-05-21",
-  html: staticSiteGenerator,
-  text: striptags(staticSiteGenerator),
-  id: 1,
-  tags: ["React", "Development"],
-  image: "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
-}
 
 const blogTwo = {
   title: "Debate Game Jam",
@@ -193,5 +181,5 @@ const blogSixteen  = {
   image: "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
 }
 
-export {blogOne, blogTwo, blogThree, blogFour, blogFive, blogSix, blogSeven, blogEight,
+export {blogTwo, blogThree, blogFour, blogFive, blogSix, blogSeven, blogEight,
   blogNine, blogTen, blogTwelve, blogThirteen, blogFourteen, blogFifteen, blogSixteen};

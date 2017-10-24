@@ -109,6 +109,12 @@ class Portfolio extends Component {
 												<h5>Technologuy:</h5>
                           <a href="#">{project.technology}</a>
 											</li>
+											{project.link && 
+											<li>
+												<h5>See more:</h5>
+												<a href={project.link}>Try me here!</a>
+											</li>
+											}
 											<li>
 												<h5>Share:</h5>
 												<ul className="social-icons">

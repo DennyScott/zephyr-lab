@@ -28,6 +28,7 @@ const portfolio = [
     date: "November 2015",
     client: "Canadian Tire",
     technology: "Unity 3D, PC, Oculus Rift",
+    link: "http://www.newswire.ca/news-releases/new-canadian-tire-showcase-store-shines-a-spotlight-on-innovative-retail-366462051.html",
     relatedWork: [2,3,4]
   },
   {
@@ -38,6 +39,7 @@ const portfolio = [
     date: "May 2016",
     client: "Canadian Tire",
     technology: "Unity 3D, Android, iOS, GoogleVR",
+    link: "http://www.canadiantire.ca/en/mobile.html",
     relatedWork: [1,3,4]
   },
   {
@@ -58,6 +60,7 @@ const portfolio = [
     date: "June 2015",
     client: "Canadian Tire",
     technology: "Unity 3D, PC, Oculus Rift",
+    link: "http://www.newswire.ca/news-releases/new-canadian-tire-showcase-store-shines-a-spotlight-on-innovative-retail-366462051.html",
     relatedWork: [2,3,1]
   },
   {
@@ -68,6 +71,7 @@ const portfolio = [
     date: "Current",
     client: "IQMetrix",
     technology: "Unity 3D, Noesis, Android, iOS",
+    link: "http://www.iqmetrix.com/products/endless-aisle",
     relatedWork: [2,3,4]
   },
   {

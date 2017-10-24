@@ -42,7 +42,7 @@ const news = props => (
         <div className="col-md-8 offset-md-2">
           <div className="module-title text-center">
             <h2>Blog</h2>
-            <p className="font-serif">Gain some insight into our processes</p>
+            <p className="font-serif">Some random thoughts by me</p>
           </div>
         </div>
       </div>
