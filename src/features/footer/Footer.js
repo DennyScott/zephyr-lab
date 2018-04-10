@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import logo from '../../assets/images/logo-light.png';
-import { connect } from 'react-redux';
-import moment from 'moment';
+import logo from "../../assets/images/logo-light.png";
+import { connect } from "react-redux";
+import moment from "moment";
 
 const recentPost = post => (
   <li key={post.id}>
     <a href="#">{post.title}</a>
-    <span className="post-date">{moment(post.created_at).format('LLL')}</span>
+    <span className="post-date">{moment(post.created_at).format("LLL")}</span>
   </li>
-)
+);
 
 const footer = props => (
   <footer className="footer">
@@ -19,8 +19,13 @@ const footer = props => (
           {/* Text widget */}
           <aside className="widget widget_text">
             <div className="textwidget">
-              <h3>Travis Scott</h3>
-              <p>I'm a Unity developer who has developed games for a wide variety of platforms and services, such as point of sale product displays, to worlds built and explored in VR. </p> <p> Also a board game enthusiast.</p>
+              <h3>Denny Scott</h3>
+              <p>
+                I'm a software developer who has developed games and web apps
+                for a wide variety of platforms and services, from endless aisle
+                displays to VR apps. Strong interest in realtime systems.{" "}
+              </p>{" "}
+              <p> Also love open source.</p>
             </div>
           </aside>
         </div>
@@ -30,11 +35,7 @@ const footer = props => (
             <div className="widget-title">
               <h5>Recent Posts</h5>
             </div>
-            <ul>
-              {
-                props.posts.slice(0, 3).map(post => recentPost(post))
-              }
-            </ul>
+            <ul>{props.posts.slice(0, 3).map(post => recentPost(post))}</ul>
           </aside>
         </div>
         <div className="col-md-6 col-lg-3">
@@ -43,10 +44,23 @@ const footer = props => (
             <div className="widget-title">
               <h5>Contact</h5>
             </div>
-            E-mail: <a href="mailto:travisscott301@gmail.com">travisscott301@gmail.com</a>
-            <br/>
-            LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/travis-scott-8a6b6584/">My Profile</a> <br/>
-            Phone: 1 204 299 6870 <br/>
+            E-mail:{" "}
+            <a href="mailto:dennyscott301@gmail.com">dennyscott301@gmail.com</a>
+            <br />
+            LinkedIn:{" "}
+            <a
+              target="_blank"
+              href="http://www.linkedin.com/in/denny-scott-289b6484"
+            >
+              My Profile
+            </a>{" "}
+            <br />
+            Github:{" "}
+            <a target="_blank" href="http://www.github.com/DennyScott">
+              Denny Scott
+            </a>{" "}
+            <br />
+            Phone: 1 204 232 1690 <br />
           </aside>
         </div>
         <div className="col-md-6 col-lg-3">
@@ -56,9 +70,11 @@ const footer = props => (
               <h5>Tags</h5>
             </div>
             <div className="tagcloud">
-              {
-                props.tags.map((tag, i) => (<a href="#" key={i}>{tag}</a>))
-              }
+              {props.tags.map((tag, i) => (
+                <a href="#" key={i}>
+                  {tag}
+                </a>
+              ))}
             </div>
           </aside>
         </div>
@@ -68,7 +84,11 @@ const footer = props => (
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div className="text-center"><span className="copyright">© 2017 Travis Scott, All Rights Reserved.</span></div>
+            <div className="text-center">
+              <span className="copyright">
+                © 2017 Denny Scott, All Rights Reserved.
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -76,11 +96,9 @@ const footer = props => (
   </footer>
 );
 
-const mapStateToProps = state => (
-  {
-    posts: state.blog.posts,
-    tags: state.tag
-  }
-)
+const mapStateToProps = state => ({
+  posts: state.blog.posts,
+  tags: state.tag
+});
 
 export default connect(mapStateToProps)(footer);
