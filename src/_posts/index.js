@@ -25,7 +25,7 @@ const blogTwo = {
   id: 2,
   tags: ["Unity3D", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogThree = {
@@ -37,7 +37,7 @@ const blogThree = {
   id: 3,
   tags: ["Javascript", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogFour = {
@@ -49,7 +49,7 @@ const blogFour = {
   id: 4,
   tags: ["Unity3D", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogFive = {
@@ -61,7 +61,7 @@ const blogFive = {
   id: 5,
   tags: ["Unity3D", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogSix = {
@@ -73,7 +73,7 @@ const blogSix = {
   id: 6,
   tags: ["Unity3D", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogSeven = {
@@ -85,7 +85,7 @@ const blogSeven = {
   id: 7,
   tags: ["Unity3D", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogEight = {
@@ -97,7 +97,7 @@ const blogEight = {
   id: 8,
   tags: ["Unity3D", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogNine = {
@@ -109,7 +109,7 @@ const blogNine = {
   id: 9,
   tags: ["Unity3D", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogTen = {
@@ -121,7 +121,7 @@ const blogTen = {
   id: 10,
   tags: ["Unity3D", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogEleven = {
@@ -133,7 +133,7 @@ const blogEleven = {
   id: 11,
   tags: ["Unity3D", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogTwelve = {
@@ -145,7 +145,7 @@ const blogTwelve = {
   id: 12,
   tags: ["Unity3D", "Testing", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogThirteen = {
@@ -157,7 +157,7 @@ const blogThirteen = {
   id: 13,
   tags: ["DevOps", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogFourteen = {
@@ -169,7 +169,7 @@ const blogFourteen = {
   id: 14,
   tags: ["Unity3D", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogFifteen = {
@@ -181,7 +181,7 @@ const blogFifteen = {
   id: 15,
   tags: ["Unity3D", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 const blogSixteen = {
@@ -193,7 +193,7 @@ const blogSixteen = {
   id: 16,
   tags: ["Unity3D", "Development"],
   image:
-    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blog/1.jpg"
+    "https://raw.githubusercontent.com/DennyScott/zephyr-lab/master/src/assets/images/blogimage.jpg"
 };
 
 export {
